@@ -6,9 +6,12 @@ import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import NearMeIcon from '@material-ui/icons/NearMe';
 import { ExpandMoreOutlined } from '@material-ui/icons';
+import LikeButton from './LikeButton';
 
 function Post({ profilePic, image, username, timestamp, message }) {
   return (
+
+
     <div className="post">
       <div className="post__top">
         <Avatar src={profilePic} className="post__avatar" />
@@ -27,6 +30,7 @@ function Post({ profilePic, image, username, timestamp, message }) {
       <div className="post__options">
         <div className="post__option">
           <ThumbUpIcon />
+          <LikeButton/>
           <p>Me gusta</p>
         </div>
         <div className="post__option">
